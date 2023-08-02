@@ -10,9 +10,10 @@ def test_selene():
     yield
 
 
-@pytest.fixture()
+@pytest.fixture(scope="function", autouse=True)
 def test_size():
-    browser.set_window_size(800, 600)
+    browser.config.window_width = 1680
+    browser.config.window_height = 1050
 
 
 
