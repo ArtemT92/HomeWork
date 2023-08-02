@@ -1,2 +1,2 @@
-selene
-pytest
+selene==2.0.0rc3.post3
+pytest==7.4.0
